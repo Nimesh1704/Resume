@@ -1,0 +1,176 @@
+/* Reset & Base Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 60px 20px;
+}
+
+/* Resume Card Container */
+.container {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 45px 55px;
+  border-radius: 18px;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  max-width: 950px;
+  width: 100%;
+  animation: fadeIn 0.9s ease-in-out;
+  transition: all 0.3s ease;
+}
+
+/* Entry Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Resume Header */
+.resume-header {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.resume-header h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #00d2ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.resume-header h4 {
+  font-size: 1.3rem;
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Section Titles */
+.section-title {
+  margin-top: 40px;
+  font-size: 2rem;
+  color: #00d2ff;
+  font-weight: 700;
+  border-left: 6px solid #00d2ff;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+/* General Text */
+p {
+  margin-bottom: 12px;
+  font-size: 1.15rem;
+  color: #e0e0e0;
+}
+
+a.link-primary {
+  color: #00d2ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a.link-primary:hover {
+  color: #66e0ff;
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .resume-header h4 {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    padding: 30px 20px;
+  }
+}
+
+/* Punch Hole */
+.punch-hole {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  border: 3px solid #ccc;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.punch-hole img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Resume Wrapper */
+.resume-wrapper {
+  position: relative;
+  padding-top: 60px;
+  max-width: 950px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 45px;
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styling */
+.btn-secondary {
+  background-color: #00d2ff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background-color: #009edc;
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+  text-decoration: none;
+}
